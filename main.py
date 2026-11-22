@@ -6,6 +6,8 @@ import logic
 # Коммит Б
 # Коммит В
 
+# Патч 2
+
 def main():
     while True:
         menu.show_menu()
