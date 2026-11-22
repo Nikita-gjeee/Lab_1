@@ -2,6 +2,8 @@
 import menu
 import logic
 #КОМЕНТ ДЛЯ ВЕТКИ MERGE
+#КОМЕНТ №2 ДЛЯ ВЕТКИ MERGE
+
 def main():
     while True:
         menu.show_menu()
