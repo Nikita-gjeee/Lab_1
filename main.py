@@ -1,8 +1,8 @@
 ﻿# main.py
 import menu
 import logic
-#КОМЕНТ ДЛЯ ВЕТКИ MERGE
-#КОМЕНТ №2 ДЛЯ ВЕТКИ MERGE
+#КОМЕНТ ДЛЯ ВЕТКИ REBASE
+#КОМЕНТ №2 ДЛЯ ВЕТКИ REBASE
 
 def main():
     while True:
