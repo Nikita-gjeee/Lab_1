@@ -4,6 +4,9 @@ import logic
 #КОМЕНТ ДЛЯ ВЕТКИ REBASE
 #КОМЕНТ №2 ДЛЯ ВЕТКИ REBASE
 
+
+#КОМЕНТ ДЛЯ ВТОРОГО КОМИТА ВЕТКИ REBASE
+
 def main():
     while True:
         menu.show_menu()
