@@ -1,7 +1,7 @@
 ﻿# menu.py
 
 #комент в ветке dev2
-
+#комент в ветке main для rebase
 def show_menu():
     print("\n--- ЕЖЕДНЕВНИК ---")
     print("1. Добавить запись")
