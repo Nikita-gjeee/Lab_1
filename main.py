@@ -1,9 +1,7 @@
 ﻿# main.py
 import menu
 import logic
-#КОМЕНТ ДЛЯ ВЕТКИ MERGE
-#КОМЕНТ №2 ДЛЯ ВЕТКИ MERGE
-
+#удалены другие коменты
 def main():
     while True:
         menu.show_menu()
