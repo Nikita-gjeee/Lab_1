@@ -2,6 +2,10 @@
 import menu
 import logic
 
+# Коммит А
+# Коммит Б
+# Коммит В
+
 def main():
     while True:
         menu.show_menu()
