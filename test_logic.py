@@ -20,3 +20,13 @@ def test_add_multiple_notes():
     logic.add_note("Вторая")
     assert len(logic.get_notes()) == 2
     assert logic.get_notes() == ["Первая", "Вторая"]
+
+def test_search_notes():
+    logic.notes.clear()
+    logic.add_note("Купить молоко")
+    logic.add_note("Покормить кота")
+    
+    # Ищем "молоко"
+    results = logic.search_notes("молоко")
+    assert len(results) == 1
+    assert results[0] == "Купить молоко"
