@@ -73,11 +73,12 @@ logic    </h1>
 </span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a>    <span class="n">notes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 </span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a>
 </span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a><span class="k">def</span><span class="w"> </span><span class="nf">get_notes</span><span class="p">():</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>    <span class="k">return</span> <span class="n">notes</span>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="k">def</span><span class="w"> </span><span class="nf">search_notes</span><span class="p">(</span><span class="n">keyword</span><span class="p">):</span>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="w">    </span><span class="sd">"""Ищет записи, содержащие ключевое слово."""</span>
-</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>    <span class="k">return</span> <span class="p">[</span><span class="n">note</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span> <span class="k">if</span> <span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a><span class="w">    </span><span class="sd">"""Комент для проверки автодокументации"""</span>
+</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>    <span class="k">return</span> <span class="n">notes</span>
+</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a>
+</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a><span class="k">def</span><span class="w"> </span><span class="nf">search_notes</span><span class="p">(</span><span class="n">keyword</span><span class="p">):</span>
+</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a><span class="w">    </span><span class="sd">"""Ищет записи, содержащие ключевое слово."""</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>    <span class="k">return</span> <span class="p">[</span><span class="n">note</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span> <span class="k">if</span> <span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
 </span></pre></div>
 
 
@@ -125,11 +126,14 @@ logic    </h1>
     </div>
     <a class="headerlink" href="#get_notes"></a>
             <div class="pdoc-code codehilite"><pre><span></span><span id="get_notes-9"><a href="#get_notes-9"><span class="linenos"> 9</span></a><span class="k">def</span><span class="w"> </span><span class="nf">get_notes</span><span class="p">():</span>
-</span><span id="get_notes-10"><a href="#get_notes-10"><span class="linenos">10</span></a>    <span class="k">return</span> <span class="n">notes</span>
+</span><span id="get_notes-10"><a href="#get_notes-10"><span class="linenos">10</span></a><span class="w">    </span><span class="sd">"""Комент для проверки автодокументации"""</span>
+</span><span id="get_notes-11"><a href="#get_notes-11"><span class="linenos">11</span></a>    <span class="k">return</span> <span class="n">notes</span>
 </span></pre></div>
 
 
-    
+            <div class="docstring"><p>Комент для проверки автодокументации</p>
+</div>
+
 
                 </section>
                 <section id="search_notes">
@@ -143,9 +147,9 @@ logic    </h1>
 
     </div>
     <a class="headerlink" href="#search_notes"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="search_notes-12"><a href="#search_notes-12"><span class="linenos">12</span></a><span class="k">def</span><span class="w"> </span><span class="nf">search_notes</span><span class="p">(</span><span class="n">keyword</span><span class="p">):</span>
-</span><span id="search_notes-13"><a href="#search_notes-13"><span class="linenos">13</span></a><span class="w">    </span><span class="sd">"""Ищет записи, содержащие ключевое слово."""</span>
-</span><span id="search_notes-14"><a href="#search_notes-14"><span class="linenos">14</span></a>    <span class="k">return</span> <span class="p">[</span><span class="n">note</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span> <span class="k">if</span> <span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="search_notes-13"><a href="#search_notes-13"><span class="linenos">13</span></a><span class="k">def</span><span class="w"> </span><span class="nf">search_notes</span><span class="p">(</span><span class="n">keyword</span><span class="p">):</span>
+</span><span id="search_notes-14"><a href="#search_notes-14"><span class="linenos">14</span></a><span class="w">    </span><span class="sd">"""Ищет записи, содержащие ключевое слово."""</span>
+</span><span id="search_notes-15"><a href="#search_notes-15"><span class="linenos">15</span></a>    <span class="k">return</span> <span class="p">[</span><span class="n">note</span> <span class="k">for</span> <span class="n">note</span> <span class="ow">in</span> <span class="n">notes</span> <span class="k">if</span> <span class="n">keyword</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">note</span><span class="o">.</span><span class="n">lower</span><span class="p">()]</span>
 </span></pre></div>
 
 
