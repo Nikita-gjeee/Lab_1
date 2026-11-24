@@ -27,6 +27,7 @@ jobs:
     - name: Run tests
       run: |
         pytest
+
   docs:
     runs-on: ubuntu-latest
     needs: build  # Запускать только если тесты (build) прошли успешно
@@ -44,8 +45,8 @@ jobs:
       run: pip install pdoc
 
     - name: Generate documentation
-      # Генерируем HTML-документацию из файлов logic.py и main.py в папку docs
-      run: pdoc ./logic.py ./main.py -o ./docs
+      # ВАЖНО: указываем путь к папке person1
+      run: pdoc ./person1/logic.py ./person1/main.py -o ./docs
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
