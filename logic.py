@@ -6,7 +6,7 @@ def add_note(text):
     notes.append(text)
 
 def get_notes():
-    # Комент для проверки автодокументации
+    """Комент для проверки автодокументации"""
     return notes
 
 def search_notes(keyword):
