@@ -45,8 +45,8 @@ jobs:
       run: pip install pdoc
 
     - name: Generate documentation
-      # ВАЖНО: указываем путь к папке person1
-      run: pdoc ./person1/logic.py ./person1/main.py -o ./docs
+      working-directory: ./person1
+      run: pdoc ./logic.py ./main.py -o ../docs
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
