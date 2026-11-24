@@ -27,10 +27,9 @@ jobs:
     - name: Run tests
       run: |
         pytest
-
   docs:
     runs-on: ubuntu-24.04
-    needs: build  # Запускать только если тесты (build) прошли успешно
+    needs: build
 
     steps:
     - name: Checkout code
@@ -45,8 +44,7 @@ jobs:
       run: pip install pdoc
 
     - name: Generate documentation
-      working-directory: ./person1
-      run: pdoc ./logic.py ./main.py -o ../docs
+      run: python -m pdoc ./person1/logic.py ./person1/main.py -o ./docs
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
